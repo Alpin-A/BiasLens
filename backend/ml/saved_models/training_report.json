@@ -1,0 +1,124 @@
+{
+  "cv_accuracy_mean": 0.8346,
+  "cv_accuracy_std": 0.0112,
+  "cv_per_fold": [
+    0.825,
+    0.8339,
+    0.8401,
+    0.8213,
+    0.8527
+  ],
+  "classes": [
+    "calm",
+    "loss_aversion",
+    "overtrading",
+    "revenge_trading"
+  ],
+  "feature_names": [
+    "trades_per_hour",
+    "mean_time_between_trades_sec",
+    "std_time_between_trades_sec",
+    "burst_count_60s",
+    "pnl_mean",
+    "pnl_std",
+    "pnl_total",
+    "win_rate",
+    "avg_quantity",
+    "std_quantity",
+    "avg_trade_value",
+    "loss_hold_to_win_hold_ratio",
+    "avg_size_after_loss_ratio",
+    "reentry_after_loss_mean_sec",
+    "consecutive_loss_streak_max",
+    "side_switch_rate",
+    "unique_symbols",
+    "balance_drawdown_pct"
+  ],
+  "feature_importances": {
+    "mean_time_between_trades_sec": 0.4386,
+    "trades_per_hour": 0.291,
+    "reentry_after_loss_mean_sec": 0.1644,
+    "win_rate": 0.0221,
+    "balance_drawdown_pct": 0.0154,
+    "std_quantity": 0.0106,
+    "consecutive_loss_streak_max": 0.0095,
+    "pnl_std": 0.0095,
+    "pnl_mean": 0.0089,
+    "pnl_total": 0.0085,
+    "avg_trade_value": 0.0059,
+    "avg_size_after_loss_ratio": 0.0055,
+    "avg_quantity": 0.0051,
+    "side_switch_rate": 0.0048,
+    "loss_hold_to_win_hold_ratio": 0.0,
+    "unique_symbols": 0.0,
+    "burst_count_60s": 0.0,
+    "std_time_between_trades_sec": 0.0
+  },
+  "classification_report": {
+    "calm": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 399.0
+    },
+    "loss_aversion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 399.0
+    },
+    "overtrading": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 399.0
+    },
+    "revenge_trading": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 399.0
+    },
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1596.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1596.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      399,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      399,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      399,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      399
+    ]
+  ],
+  "window_size": 50,
+  "stride": 25,
+  "total_samples": 1596
+}
