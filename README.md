@@ -2,6 +2,8 @@
 
 A tool for detecting cognitive biases in trading histories. Upload a trade log as a CSV, get quantified scores for overtrading, loss aversion, and revenge trading, visualize the patterns, simulate what your P&L would look like without the biased trades, and get an AI-generated coaching report.
 
+> 🏆 1st Place — National Bank of Canada Bias Detection Challenge, QHacks 2026
+
 ## What it does
 
 Upload a CSV of trades. BiasLens runs three rule-based detectors and an XGBoost classifier over the trade history and produces:
